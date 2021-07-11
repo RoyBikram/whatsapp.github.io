@@ -106,8 +106,9 @@ body {
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.116);
   }
 
-  select {
-    text-decoration: none;
+  select option {
+    /* text-decoration: none; */
+    background-color: white;
   }
 
   .container button {
