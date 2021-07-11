@@ -42,23 +42,32 @@ body {
     font-size: 22px;
     font-weight: 500;
     margin: 20px;
+    margin-bottom: 30px;
+    font-weight: 600;
+
 }
 
 .title img {
     display: inline-block;
     height: 30px;
     transform: translateY(9px);
+    
 }
 .title span {
     color: rgb(92, 219, 92);
     transform: translateY(100px);
-    /* font-weight: 500; */
+    font-weight: 500;
+    /* outline: green; */
+    font-size: 23px;
+    -webkit-text-stroke: 0.5px rgb(92, 219, 92);
+
+    /* text-shadow: 0px 0px 5px rgb(145, 255, 145); */
 }
 
 .subtitle {
     color: rgb(88, 88, 88);
-    font-size: 14px;
-    margin-bottom: 10px;
+    font-size: 15px;
+    margin-bottom: 15px;
 }
 
 .para {
@@ -81,7 +90,7 @@ body {
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     margin-bottom: 10px;
-    width: 550px;
+    width: 600px;
     height: 80px;
     
 }
@@ -113,7 +122,7 @@ body {
 
   .container button {
       /* margin-left: 10px; */
-    padding:5px 10px;
+    padding:5px 17px;
     font-size: 13px;
     outline: none;
     border-radius: 20px;
@@ -136,6 +145,15 @@ body {
     color: rgb(128, 128, 128);
 }
 
+/* form  input:focus,
+form  input:valid{
+  border: 2px solid #74b9ff;
+}
+form  select:focus,
+form  select:valid{
+  border: 2px solid #74b9ff;
+} */
+
 
 @media only screen and (max-width: 400px) {
     .container form {
@@ -146,17 +164,35 @@ body {
     }
 
     .container {
-        height: 250px;
-        width: 250px;
+        height: 300px;
+        width: 300px;
     }
+
+    .container input,select{
+        width: 260px;
+        height: 45px;
+     }
+
+     .container button {
+         padding: 8px 20px 7px 20px;
+     }
   }
 
 .typeingAnimation {
     height: 50px;
 }
+
   #check{
     margin:2px auto;
     width: fit-content;
     border-right: 1px solid;
     font-size: 30px;
+}
+
+.illustrations {
+    margin-bottom: 50px;
+}
+
+.illustrations img {
+    height: 400px;
 }
