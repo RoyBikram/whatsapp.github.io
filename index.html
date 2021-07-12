@@ -20,21 +20,35 @@
         <div class="subtitle">चला तर मग, आजच स्प्रेडईट जॉईन करा🤝</div>
         <div class="para">Join Noww Absolutely <span>Free</span></div>
         <div class="container">
-            <form action="">
-                <select name="" id="">
-                    <option value="">जिल्हा निवडा</option>
-                    <option value="">First Option</option>
-                    <option value="">First Option</option>
-                    <option value="">First Option</option>
+            <form action="" method="POST" name="google-sheet">
+                <select name="Dis" id="">
+                    <option value="First">जिल्हा निवडा</option>
+                    <option value="Second">First Option</option>
+                    <option value="Three">First Option</option>
+                    <option value="Fore">First Option</option>
                 </select>
-                <input type="text" placeholder="तुमचा 10 अंकी WhatsApp क्रमांक" required>
-                <button><a href="https://api.whatsapp.com/send?phone=918101763005&text=Sample Text">जॉईन करा</a>
+                <input maxlength="10" type="tel" name="Phone" placeholder="तुमचा 10 अंकी WhatsApp क्रमांक" required>
+                <button type="submit">
+                    जॉईन करा
                 </button>
+                <!-- <a href="https://api.whatsapp.com/send?phone=918101763005&text=Sample Text">
+                </a> -->
             </form>
         </div>
         <div class="copyright">© Your Company, All rights reserved</div>
     </div>
-    <!-- <div class="illustrations"><img src="/illustrations.svg" alt="" srcset=""></div> -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzo8ThIZiGuc6rdDmZ1LKu9iSCLt6hkuxwIZeQckkbeFXRBoGS7_nweM8_6LaWblBun/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(res => document.location.href="https://api.whatsapp.com/send?phone=918101763005&text=SampleText")
+                .catch(error => console.error('Error!', error.message))
+            })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
