@@ -32,6 +32,8 @@ body {
 
 .mainContainer {
     height: 100%;
+    margin-top:68px ;
+
     display: flex;
     justify-content: center;
     align-items: center;
