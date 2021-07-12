@@ -28,6 +28,7 @@ body {
     padding: 20px;
     font-size: 24px;
     font-weight: 500;
+    z-index: 400;
 }
 
 .mainContainer {
@@ -43,7 +44,7 @@ body {
 .title {
     font-size: 22px;
     font-weight: 500;
-    margin: 20px;
+    margin: 10px;
     margin-bottom: 30px;
     font-weight: 600;
 
@@ -166,7 +167,7 @@ form  select:valid{
     }
 
     .container {
-        height: 300px;
+        height: 250px;
         width: 300px;
     }
 
@@ -178,11 +179,16 @@ form  select:valid{
      .container button {
          padding: 8px 20px 7px 20px;
      }
+     .title {
+         margin-top: 0px;
+         margin-bottom: 20px;
+     }
   }
 
 .typeingAnimation {
-    height: 50px;
+    height: 80px;
     width: 200px;
+    padding: 20px;
 }
 
   #check{
