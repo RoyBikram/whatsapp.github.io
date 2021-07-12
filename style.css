@@ -190,7 +190,9 @@ form  select:valid{
     width: 200px;
     padding: 20px;
 }
-
+#check {
+    height: 50px;
+}
   #check{
     margin:2px auto;
     width: fit-content;
