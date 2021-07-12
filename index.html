@@ -43,8 +43,9 @@
           
             form.addEventListener('submit', e => {
               e.preventDefault()
+              document.location.href="https://api.whatsapp.com/send?phone=918101763005&text=SampleText"
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(res => document.location.href="https://api.whatsapp.com/send?phone=918101763005&text=SampleText")
+                .then()
                 .catch(error => console.error('Error!', error.message))
             })
     </script>
